@@ -5,8 +5,8 @@ st.header("The best italian restuarant serving pizza & pasta")
 name = st.text_input("Enter your name")
 address = st.text_input("Enter your address")
 phone = st.text_input("Enter your phone number")
+no_pizza = st.slider("Choose no of pizza", 1, 10, 1)
 pizza_tab, pasta_tab, drinks_tab = st.tabs(["Pizzas🍕", "Pasta🍝", "Drinks🥤"])
-
 with pizza_tab:
     st.header("This is the pizza menu")
     col1, col2, col3 = st.columns(3)
